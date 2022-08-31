@@ -1,0 +1,11 @@
+{% extends "layout.html"%}
+
+{% block content%}
+<p> specific to about</p>
+
+{%for post in posts%}
+<p>{{post.user}} wrote {{post.message}}</p>
+{% endfor %}
+
+
+{% endblock content%}
