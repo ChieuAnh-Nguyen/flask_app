@@ -1,3 +1,3 @@
 # flask_app
 
-hi
+Currently doing a refresher on flask + jinja2 + bootstrap

@@ -20,11 +20,15 @@ app = Flask(__name__)
 
 # about.html uses the posts variable on the left, which is assigned posts created up top'''
 def home():
-    return render_template("layout.html")
+    return render_template("layout.html", title = "Home")
 
 @app.route('/about')
 def about():
-    return render_template("about.html", posts = posts)
+    return render_template("about.html", title = "About", posts = posts)
+
+@app.route('/resume')
+def resume():
+    return render_template("resume.html", title = "Resume")
 
 if __name__ == '__main__':
     app.run(debug=True)
